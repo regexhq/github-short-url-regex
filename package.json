@@ -18,7 +18,12 @@
     "url": "git://github.com/regexps/github-short-url-regex.git"
   },
   "keywords": [
-    "charlike"
+    "github",
+    "regex",
+    "regexps",
+    "short",
+    "shorthand",
+    "url"
   ],
   "license": {
     "type": "MIT",
