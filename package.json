@@ -1,0 +1,32 @@
+{
+  "name": "github-short-url-regex",
+  "version": "0.0.0",
+  "description": "Regex for converting github shorthand (user/repo#branch) url to object",
+  "scripts": {
+    "lint": "jshint . && jscs . --reporter inline",
+    "test": "mocha",
+    "test-cov": "istanbul cover _mocha",
+    "test-travis": "istanbul cover _mocha --report lcovonly"
+  },
+  "author": {
+    "name": "Charlike Make Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "https://github.com/tunnckoCore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/regexps/github-short-url-regex.git"
+  },
+  "keywords": [
+    "charlike"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/regexps/github-short-url-regex/blob/master/license.md"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul-harmony": "^0.3.1",
+    "mocha": "^2.0.1"
+  }
+}
