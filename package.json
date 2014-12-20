@@ -1,6 +1,6 @@
 {
   "name": "github-short-url-regex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Regex for converting github shorthand (user/repo#branch) url to object",
   "scripts": {
     "lint": "jshint . && jscs . --reporter inline",
