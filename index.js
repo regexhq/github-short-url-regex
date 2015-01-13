@@ -16,7 +16,7 @@
  */
 module.exports = function githubShortUrlRegex(options) {
   options = options || {};
-  var regex = '([\\w-_]+)\\/([\\w-_.]+)#?([\\w-_.]+)?';
+  var regex = '([-_\\w]+)\\/([-_.\\w]+)#?([-_.\\w]+)?';
 
   regex = options.exact === false ? regex : '^'+regex+'$'
 
