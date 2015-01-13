@@ -3,7 +3,7 @@
 [![build status][travis-img]][travis-url]
 [![coverage status][coveralls-img]][coveralls-url]
 
-> Regex for converting github shorthand url (user/repo#branch) to object
+> Regex for finding github shorthand url (user/repo#branch)
 
 ## Install
 ```bash
@@ -13,7 +13,7 @@ $ npm test
 
 
 ## [.githubShortUrlRegex](index.js#L17)
-> Convert github shorthand url (user/repo#branch) to object
+> Find github shorthand url (user/repo#branch)  
 
 * `[options]` **{Object}**
   - `flags` **{String}** every valid RegExp flag, default `undefined`
