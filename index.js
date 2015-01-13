@@ -8,7 +8,7 @@
 'use strict';
 
 /**
- * Convert github shorthand url (user/repo#branch) to object
+ * Find github shorthand url (user/repo#branch)
  *
  * @param  {Object} `options`
  * @return {RegExp}
