@@ -17,6 +17,18 @@ describe('github-short-url-regex', function() {
     assert.strictEqual(actual, false);
     done();
   });
+  it('should work for npm-like shorthands (gulp@v3.8.10)', function(done) {
+    var opts = {exact: true};
+    var fixture = 'gulpjs/gulp@v3.8.10';
+    var actual = fixture.match(regexp(opts))[0];
+    assert.strictEqual(actual, 'gulpjs/gulp@v3.8.10');
+
+    opts = {exact: true};
+    fixture = 'mochajs/mocha@2.2.1';
+    actual = fixture.match(regexp(opts))[0];
+    assert.strictEqual(actual, 'mochajs/mocha@2.2.1');
+    done();
+  });
 
   describe('should handle `options` - regex.test(str)', function() {
     it('with `flags: \'g\'` only, exact true by default', function(done) {
@@ -26,14 +38,12 @@ describe('github-short-url-regex', function() {
       assert.strictEqual(actual, false);
       done();
     });
-
     it('with `flags: \'g\', exact: false`', function(done) {
       var opts = {flags: 'g', exact: false};
       var actual = regexp(opts).test('gh tunnckoCore/npmls#master here');
       assert.strictEqual(actual, true);
       done();
     });
-
     it('with `flags: \'g\', exact: true`', function(done) {
       var opts = {flags: 'g', exact: true};
       var fixture = 'gh tunnckoCore/npmls#master here';
@@ -51,7 +61,6 @@ describe('github-short-url-regex', function() {
       assert.strictEqual(actual, null);
       done();
     });
-
     it('with `flags: \'g\', exact: false` in text', function(done) {
       var opts = {flags: 'g', exact: false};
       var fixture = 'gh tunnckoCore/npmls#test here user/repo#branch yea';
@@ -59,7 +68,6 @@ describe('github-short-url-regex', function() {
       assert.deepEqual(actual, ['tunnckoCore/npmls#test', 'user/repo#branch']);
       done();
     });
-
     it('without flags, `exact: false` in text', function(done) {
       var opts = {exact: false};
       var fixture = 'gh tunnckoCore/npmls#master here user/repo#branch yea';
@@ -67,7 +75,6 @@ describe('github-short-url-regex', function() {
       assert.strictEqual(actual, 'tunnckoCore/npmls#master');
       done();
     });
-
     it('without flags, `exact: true` in text', function(done) {
       var opts = {exact: true};
       var fixture = 'gh tunnckoCore/npmls#master here user/repo#branch yea';
@@ -75,7 +82,6 @@ describe('github-short-url-regex', function() {
       assert.strictEqual(actual, null);
       done();
     });
-
     it('without flags, `exact: true`', function(done) {
       var opts = {exact: true};
       var fixture = 'tunnckoCore/npmls#master';
