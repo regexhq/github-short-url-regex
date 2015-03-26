@@ -12,6 +12,12 @@ $ npm test
 ```
 
 
+## Support
+- github shorthands `mochajs/mocha#master`
+  + where thing after hash (#) represent release, tag or branch
+- npm shorthands `gulpjs/gulp@v3.8.10`
+
+
 ## [.githubShortUrlRegex](index.js#L17)
 > Find github shorthand url (user/repo#branch)  
 
