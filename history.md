@@ -1,5 +1,11 @@
 
 
+## v3.0.0 / March 26, 2014
+- Release v3.0.0 / npm@v3.0.0
+- oops... we dont want capturing group `(#|@)?`
+  + fast-fingers mistake in 2.0.0
+  + this breaks many things on the pipeline
+
 ## v2.0.0 / March 26, 2014
 - Release v2.0.0 / npm@v2.0.0
 - **update** readme
