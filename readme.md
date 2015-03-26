@@ -3,9 +3,9 @@
 > Regular expression (Regex) for matching github shorthand (user/repo#branch).
 
 ## Install
-```bash
-$ npm install github-short-url-regex
-$ npm test
+```
+npm i --save github-short-url-regex
+npm test
 ```
 
 
