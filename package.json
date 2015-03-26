@@ -1,6 +1,6 @@
 {
   "name": "github-short-url-regex",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Regular expression (Regex) for matching github shorthand (user/repo#branch).",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
