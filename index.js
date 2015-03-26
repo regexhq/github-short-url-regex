@@ -18,7 +18,7 @@ var cache = require('regex-cache');
  */
 module.exports = function githubShortUrlRegex(options) {
   options = options || {};
-  var regex = '([-_\\w]+)\\/([-_.\\w]+)(#|@)?([-_.\\w]+)?';
+  var regex = '([-_\\w]+)\\/([-_.\\w]+)(?:#|@)?([-_.\\w]+)?';
 
   regex = options.exact === false ? regex : '^' + regex + '$';
 
