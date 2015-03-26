@@ -1,9 +1,6 @@
-[![npm version][npmjs-img]][npmjs-url]
-[![mit license][license-img]][license-url]
-[![build status][travis-img]][travis-url]
-[![coverage status][coveralls-img]][coveralls-url]
+## [![npm version][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url]
 
-> Regex for finding github shorthand url (user/repo#branch)
+> Regular expression (Regex) for matching github shorthand (user/repo#branch).
 
 ## Install
 ```bash
@@ -18,13 +15,13 @@ $ npm test
 - npm shorthands `gulpjs/gulp@v3.8.10`
 
 
-## [.githubShortUrlRegex](index.js#L17)
+## [githubShortUrlRegex](./index.js#L19)
 > Find github shorthand url (user/repo#branch)  
 
-* `[options]` **{Object}**
-  - `flags` **{String}** every valid RegExp flag, default `undefined`
-  - `exact` **{Boolean}**
-* `return` **{RegExp}**
+- `[options]` **{Object}**
+  + `flags` **{String}** every valid RegExp flag, default `undefined`
+  + `exact` **{Boolean}**
+- `return` **{RegExp}**
 
 
 ## Usage
@@ -72,7 +69,7 @@ regex({flags: 'g', exact: true}).test('gh tunnckoCore/npmls#master here');
 
 
 ## License [![MIT license][license-img]][license-url]
-Copyright (c) 2014 [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
+Copyright (c) 2014-2015 [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
 Released under the [`MIT`][license-url] license.
 
 
@@ -101,4 +98,4 @@ Released under the [`MIT`][license-url] license.
 
 ***
 
-_Powered and automated by [readdirp + hogan.js](https://github.com/tunnckoCore), December 20, 2014_
+_Powered and automated by [docks](https://github.com/tunnckoCore), March 26, 2015_

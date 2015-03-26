@@ -1,15 +1,15 @@
 {
   "name": "github-short-url-regex",
   "version": "1.0.0",
-  "description": "Regex for converting github shorthand (user/repo#branch) url to object",
+  "description": "Regular expression (Regex) for matching github shorthand (user/repo#branch).",
   "scripts": {
-    "lint": "jshint . && jscs . --reporter inline",
+    "lint": "jshint index.js && jscs index.js --reporter inline",
     "test": "mocha",
     "test-cov": "istanbul cover _mocha",
     "test-travis": "istanbul cover _mocha --report lcovonly"
   },
   "author": {
-    "name": "Charlike Make Reagent",
+    "name": "Charlike Mike Reagent",
     "email": "mameto_100@mail.bg",
     "url": "https://github.com/tunnckoCore"
   },
@@ -31,8 +31,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "istanbul-harmony": "^0.3.1",
-    "mocha": "^2.0.1",
-    "mocha-lcov-reporter": "^0.0.1"
+    "istanbul-harmony": "~0.3.1",
+    "mocha": "~2.2.0"
   }
 }
