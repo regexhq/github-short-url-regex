@@ -7,22 +7,11 @@
 
 'use strict';
 
-var cache = require('regex-cache');
-
-/**
- * Find github shorthand url (user/repo#branch)
- *
- * @param  {Object} `options`
- * @return {RegExp}
- * @api public
- */
 module.exports = function githubShortUrlRegex(options) {
   options = options || {};
   var regex = '([-_\\w]+)\\/([-_.\\w]+)(#|@)?([-_.\\w]+)?';
 
   regex = options.exact === false ? regex : '^' + regex + '$';
 
-  return cache(function _regexCache() {
-    return new RegExp(regex, options.flags);
-  }, options);
+  return new RegExp(regex, options.flags);
 };

@@ -59,6 +59,12 @@ regex({flags: 'g', exact: true}).test('gh tunnckoCore/npmls#master here');
 ```
 
 
+## Related
+- [regex-cache](https://github.com/jonschlinkert/regex-cache): Memoize the results of a call to the RegExp constructor, avoiding repetitious runtime compilation of the same string and options, resulting in dramatic speed improvements.
+- [utils](https://github.com/jonschlinkert/utils): Fast, generic JavaScript/node.js utility functions.
+- [helper-related](https://github.com/helpers/helper-related): Template helper for generating a list of links to the homepages of related GitHub/npm projects.
+
+
 ## Author
 **Charlike Mike Reagent**
 + [gratipay/tunnckoCore][author-gratipay]

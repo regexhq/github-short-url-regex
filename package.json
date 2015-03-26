@@ -6,7 +6,8 @@
     "lint": "jshint index.js && jscs index.js --reporter inline",
     "test": "mocha",
     "test-cov": "istanbul cover _mocha",
-    "test-travis": "istanbul cover _mocha --report lcovonly"
+    "test-travis": "istanbul cover _mocha --report lcovonly",
+    "benchmark": "node benchmark"
   },
   "author": {
     "name": "Charlike Mike Reagent",
@@ -29,8 +30,11 @@
     "type": "MIT",
     "url": "https://github.com/regexps/github-short-url-regex/blob/master/license.md"
   },
-  "dependencies": {},
+  "dependencies": {
+    "regex-cache": "~0.4.2"
+  },
   "devDependencies": {
+    "benchmarked": "^0.1.4",
     "istanbul-harmony": "~0.3.1",
     "mocha": "~2.2.0"
   }
