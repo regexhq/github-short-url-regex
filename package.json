@@ -34,8 +34,8 @@
     "regex-cache": "~0.4.2"
   },
   "devDependencies": {
-    "benchmarked": "~0.1.4",
+    "benchmarked": "~0.2.5",
     "istanbul-harmony": "~0.3.1",
-    "mocha": "~2.2.0"
+    "mocha": "~3.1.2"
   }
 }
