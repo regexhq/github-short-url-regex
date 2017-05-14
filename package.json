@@ -36,6 +36,6 @@
   "devDependencies": {
     "benchmarked": "~0.2.5",
     "istanbul-harmony": "~0.3.1",
-    "mocha": "~3.1.2"
+    "mocha": "~3.4.0"
   }
 }
